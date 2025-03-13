@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-book website</title>
+    <style>
+        .navbar{
+            background-color: rgb(0, 140, 255);
+            height: 5vh;
+            display: flex;
+            position: sticky;
+            top: 0vh;
+            left: 0vh;
+            gap: 2vw;
+            padding-left: 2vh;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav_option{
+            text-decoration: none;
+            color: white;
+            font-size: 3vh;
+            padding: 0.8vh 0vh 0.8vh 0vh;
+        }
+        .nav_option:hover{
+            background-color: rgb(20, 178, 6);
+        }
+        .contact{
+            background-color: rgb(218, 213, 214);
+        }
+        .form{
+            padding: 3vh 3vh 1.5vh 3vh;
+        }
+        .name{
+            width: 50vw;
+            height: 5vh;
+            border: 1px solid white;
+        }
+        .country{
+            padding: 1.8vh;
+            width: 48vw;
+            border: 1px solid white;
+        }
+        .textarea{
+            width: 50vw;
+            height: 25vh;
+            border: 1px solid white;
+            margin-bottom: 3vh;
+        }
+        .submit{
+            display: block;
+            padding: 1.5vh 1.5vw;
+            color: white;
+            background-color: rgb(57, 144, 57);
+            border: 1px solid rgb(60, 134, 60);
+            margin-bottom: 3vh;
+        }
+        .brands{
+            padding: 5vh;
+            display: flex;
+            gap: 3vh;
+        }
+        .brand{
+            width: 15vw;
+            height: 24vh;
+
+        }
+        .brand_title{
+            padding-left: 5vh;
+        }
+        .book_container,.book_container1{
+            display: flex;
+            padding: 4vh 4vh 0vh 4vh;
+            gap: 0.3vw;
+        }
+        .book_container1{
+            padding-top: 1vh;
+            padding-bottom: 10vh;
+        }
+        .book{
+            width: 16vw;
+            height: 40vh;
+        }
+        .arrow{
+            color: white;
+        }
+        .explore{
+            background-color: blue;
+            color: white;
+            border: 0px;
+            padding: 1vh;
+            border-radius: 0.5vh;
+            font-size: 2.5vh;
+        }
+        .main{
+            padding-top: 10vh;
+            height: 70vh;
+            width: 98vw;
+            color: white;
+            text-align: center;
+            background-image: url("main.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        h1{
+            font-size: 14vh;
+        }
+        .main_description{
+            font-size: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="nav_option">Home</a>
+        <a href="" class="nav_option">Products</a>
+        <a href="" class="nav_option">About</a>
+        <a href="" class="nav_option">Login</a>
+        <a href="" class="nav_option">Create Account</a>
+    </nav>
+    <div class="main">
+        <h1>Welcome to Book Zone</h1>
+        <p class="main_description">You can find out yours book here.</p>
+        <button class="explore">Explore Here <i class="fa fa-arrow-right arrow" aria-hidden="true"></i></button>
+    </div>
+    <h2 class="brand_title">Featured Products</h2>
+    <div class="book_container">
+        <img src="book1.jpg" alt="" class="book">
+        <img src="book2.jpeg" alt="" class="book">
+        <img src="book3.jpg" alt="" class="book">
+        <img src="book4.jpg" alt="" class="book">
+        <img src="book5.jpg" alt="" class="book">
+    </div>
+    <div class="book_container1">
+        <img src="book6.jpg" alt="" class="book">
+        <img src="book7.jpg" alt="" class="book">
+        <img src="book8.jpg" alt="" class="book">
+        <img src="book9.jpg" alt="" class="book">
+        <img src="book10.jpg" alt="" class="book">
+    </div>
+    <h2 class="brand_title">Featured Brands</h2>
+    <div class="brands">
+        <img src="brand1.png" alt="" class="brand">
+        <img src="brand2.png" alt="" class="brand">
+        <img src="brand3.png" alt="" class="brand"> 
+        <img src="brand4.png" alt="" class="brand">
+        <img src="brand5.png" alt="" class="brand">
+
+    </div>
+    <div class="contact">
+        <h1>Contact us</h1>
+        <p>leave us a message or suggestion:</p>
+        <div class="form">
+            <p>First Name</p>
+            <input type="text" placeholder="your first name.." class="name">
+            <p>Last Name</p>
+            <input type="text" placeholder="your last name.." class="name">
+            <p>Country</p>
+            <select class="country" name="Country" id="" aria-placeholder="Country">
+                <option value="India">India</option>
+                <option value="India">Australia</option>
+                <option value="India">Canada</option>
+                <option value="India">USA</option>
+            </select>
+            <p>Subject</p>
+            <textarea class="textarea" name="Message" id="" placeholder="Write Something..."></textarea>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
